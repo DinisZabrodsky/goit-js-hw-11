@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form {
+    margin-bottom: 10px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .search-form input {
+    padding: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: rgb(202, 202, 198);
+  }
+  
+  
+  button {
+    display: block;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(202, 202, 198);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s;
+  }
+  
+  .load-more {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .is-hidden {
+    display: none;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: rgb(4, 95, 3);
+  }
+  
+  .gallery {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  
+  .photo-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+  }
